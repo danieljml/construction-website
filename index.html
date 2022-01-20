@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Silvera Enterprises</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets Prueba/img/LOGO-many.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="container__header">
+      <header class="navbar align-items-stretch py-4">
+        <div class="container__nav">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Assets Prueba/img/LOGO-many.png"
+              alt=""
+              width="98"
+              height="68"
+            />
+          </a>
+        </div>
+        <div class="date">
+          <span class="date__title">Opening Hour:</span>
+          <p class="date__hour">Mon - sat 8:00 - 17:30, Sunday - CLOSED</p>
+        </div>
+        <div class="space"></div>
+        <div class="follow">
+          <span class="follow__title">Follow us</span>
+          <div class="follow__icons">
+            <i class="bx bxl-facebook-square"></i><i class="bx bxl-twitter"></i
+            ><i class="bx bxl-instagram"></i>
+            <i class="bx bxl-linkedin-square"></i>
+          </div>
+        </div>
+        <div class="info">
+          <span><span class="info__title">Free call </span>+1 234 456 789</span>
+          <p class="info__hour">Call Us Now 24/7 Customer Support</p>
+        </div>
+      </header>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav text-black">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#about">About us</a>
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#contact">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div id="home" class="container-fluid hero">
+        <div class="container__content col-lg-12">
+          <h1>
+            We create the desired
+            <br />
+            Home for you
+          </h1>
+          <span></span>
+          <p>
+            Contact us to find out your ideas and build <br />
+            them together
+          </p>
+        </div>
+        <div class="container__form col-lg-12">
+          <form class="row g-3">
+            <h1 class="form__title">Make a Reservation</h1>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Email"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputPhone"
+                placeholder="Telephone"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="date"
+                class="form-control datepicker"
+                id="datepicker"
+                name="date"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="inputService"
+                placeholder="Choose a service"
+              />
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" placeholder="Mensajes"></textarea>
+            </div>
+            <button class="col-12" type="submit" class="btn btn-primary">
+              SEND
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Background Video -->
+      <div>
+        <video
+          autoplay
+          muted
+          loop
+          id="video"
+          src="./Assets Prueba/video/hero-background.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+    </section>
+    <!-- About us -->
+    <section id="about" class="container-fluid container__aboutUs my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col aboutUs__image col-lg-6 col-12">
+            <img src="Assets Prueba/img/about.jpg" alt="" srcset="" />
+            <div class="cubic"></div>
+            <div class="icon__hammer">
+              <img src="Assets Prueba/img/hammer.svg" alt="" />
+            </div>
+          </div>
+          <div class="col aboutUs__content col-lg-5 col-12">
+            <p class="content__title">WELCOME TO CONSTRUCTION COMPANY</p>
+            <h1 class="content__question">Why work with us?</h1>
+            <article class="content__description">
+              <p class="description__content">
+                We are a company with highly qualifield and responsible personal
+                who will perform the jobs for your home.
+              </p>
+              <div class="description__slogans">
+                <div class="slogan">
+                  <p>Quality Construction</p>
+                  <img src="./Assets Prueba/img/work-4.jpg" alt="" />
+                </div>
+                <div class="slogan">
+                  <p>Professional Liability</p>
+                  <img src="./Assets Prueba/img/work-5.jpg" alt="" />
+                </div>
+                <div class="slogan">
+                  <p>Dedicated To Clients</p>
+                  <img src="./Assets Prueba/img/work-7.jpg" alt="" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services and Offers -->
+    <section
+      id="services"
+      class="container-fluid my-5 py-5 container__services"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 container__services">
+            <article>
+              <p class="services__title">ABOUT US</p>
+              <h1 class="services__subtitle">
+                Best Provider for Industrial Services
+              </h1>
+              <p class="sevices__slogan">
+                We are a unique company dedicated to our clients
+              </p>
+            </article>
+            <div
+              class="btn-group col-12"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <button type="button" class="btn btn-outline-primary active">
+                Our Mission
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Our Vision
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Our Value
+              </button>
+            </div>
+            <div class="services__us">
+              <p>
+                We are an expert group in architectural design and interior
+                design width a residential approach, where we generate creative,
+                authentic and innovative solutions, achieving results that
+                exceed the expectations of each client.
+              </p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn__contact">
+                CONTACT US!
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12 container__offers">
+            <p class="offers__title">SERVICES</p>
+            <h1 class="offers__question">
+              Know what we <br />
+              offer you
+            </h1>
+            <article class="offers__description">
+              <div class="description__offerts">
+                <div class="offert offert-quality">
+                  <div class="icon-title">
+                    <img src="./Assets Prueba/img/compass.svg" alt="" />
+                    <p>Interior Design</p>
+                  </div>
+                  <p class="offert__content">
+                    We design the best interiors for your home full of styles
+                    and confort
+                  </p>
+                </div>
+                <div class="offert offert-liability">
+                  <div class="icon-title">
+                    <img src="./Assets Prueba/img/wrench.svg" />
+                    <p>Plumbing</p>
+                  </div>
+                  <p class="offert__content">
+                    We help your repair your plumbing. Our service is of quality
+                  </p>
+                </div>
+                <div class="offert offert-dedication">
+                  <div class="icon-title">
+                    <img src="./Assets Prueba/img/paint.svg" />
+                    <p>Dedicated To Clients</p>
+                  </div>
+                  <p class="offert__content">
+                    Painting your house is a task that we can do for you, in a
+                    short time
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <div id="gallery" class="container-fluid container__gallery">
+      <div class="container">
+        <div class="gallery__titles">
+          <p class="gallery__title">OUR PROJECTS</p>
+          <h1 class="gallery__subtitle">Know what we do</h1>
+        </div>
+        <div class="gallery">
+          <div class="item-gallery">
+            <img src="./Assets Prueba//img/work-5.jpg" alt="" />
+          </div>
+          <div class="item-gallery">
+            <img src="./Assets Prueba//img/work-6.jpg" alt="" />
+          </div>
+          <div class="item-gallery">
+            <img src="./Assets Prueba//img/work-7.jpg" alt="" />
+          </div>
+          <div class="item-gallery">
+            <img src="./Assets Prueba//img/work-8.jpg" alt="" />
+          </div>
+          <div class="item-gallery">
+            <img src="./Assets Prueba//img/work-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary">VIEW GALLERY</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <!-- Swiper -->
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="container container__testimonials">
+        <div class="testimonials__content">
+          <p>View testimonials</p>
+          <h1>
+            For us it is very important to <br />
+            know the <br />
+            opinions of our clients
+          </h1>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper testimonials__people">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="Assets Prueba/img/person_4.jpg" alt="" />
+              <div class="slide__title">
+                <p class="title">Jeff freshman</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="Assets Prueba/img/person_2.jpg" alt="" />
+              <div class="slide__title">
+                <p class="title">Person 1</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="Assets Prueba/img/person_1.jpg" alt="" />
+              <div class="slide__title">
+                <p class="title">Person 2</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="Assets Prueba/img/person_5.jpg" alt="" />
+              <div class="slide__title">
+                <p class="title">Person 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Icons Contact -->
+    <section class="container-fluid">
+      <div class="container container__social">
+        <div class="social__content col-lg-5 col-12">
+          <p class="social__title">OUR SOCIAL MEDIA</p>
+          <h1 class="social__subtitle">
+            Follow us on Social<br />
+            media
+          </h1>
+        </div>
+        <div class="col-lg-5 col-12">
+          <div class="social__icons">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter -->
+    <div class="container my-5">
+      <div class="bg__newsletter text-center text-white">
+        <div class="container p-4">
+          <section class="newsletter">
+            <form action="">
+              <div
+                class="row d-flex justify-content-center container__newsletter align-items-center"
+              >
+                <div class="col-lg-4 col-12">
+                  <p class="">
+                    <strong>Subscribe to our Newsletter</strong>
+                  </p>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                  <div class="form-outline form-white newsletter__input">
+                    <input
+                      type="email"
+                      id="form5Example2"
+                      class="form-control"
+                      placeholder="Enter email address"
+                    /><button type="submit" class="btn btn-outline-light">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div
+      id="contact"
+      class="container-fluid pt-3 container__footer"
+      style="background-color: #001531"
+    >
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-white">
+        <!-- Section: Social media -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="fw-bold footer__title">Company name</h6>
+                <span
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ff7800; height: 2px"
+                ></span>
+                <p><i class="bx bx-map"></i> 123 Street, New York, USA</p>
+                <p><i class="bi bi-telephone"></i> +012345 67890</p>
+                <p><i class="bi bi-envelope-fill"></i> info@example.com</p>
+                <div class="footer__icons">
+                  <a href=""><i class="bx bxl-twitter"></i></a>
+                  <a href=""><i class="bx bxl-facebook"></i></a>
+                  <a href=""><i class="bx bxl-youtube"></i></a>
+                  <a href=""><i class="bx bxl-instagram"></i></a>
+                  <a href=""><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="fw-bold footer__title">Services Areas</h6>
+                <span
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ff7800; height: 2px"
+                ></span>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> House Renovation</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> Architecture Design</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> Interior Design</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> Building
+                    Construction</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> Painting</a
+                  >
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="fw-bold footer__title">Useful Pages</h6>
+                <span
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ff7800; height: 2px"
+                ></span>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> About Us</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> Services</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> Gallery</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="footer-link"
+                    ><i class="bx bx-chevron-right"></i> Contact Us</a
+                  >
+                </p>
+              </div>
+              <div
+                class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3 container__copyright"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <p>
+            © Copyright:
+            <a class="company__name" href="#">Company Name.</a>
+            All Rights Reserved
+          </p>
+          <p>
+            This Webside Was Design And Developed by
+            <a
+              href="https://josesilvera.com/"
+              target="__blank"
+              class="owner__name"
+              >Josesilvera.com</a
+            >
+          </p>
+          <div class="owner__logo col-12">
+            <a href="https://josesilvera.com/" target="__blank"
+              ><img src="Assets Prueba/img/Logo-JS-White-Wshadow.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
