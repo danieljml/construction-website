@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white !important;
@@ -14,8 +14,9 @@ body {
 }
 
 .navbar {
-  align-items: stretch;
-  justify-content: center !important;
+  display: flex;
+  justify-content: center;
+  padding: 0 4.25rem;
   background-color: rgba(4, 25, 46, 0.97);
   column-gap: 3.5rem;
   font-size: 14px;
@@ -100,7 +101,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-image: url("./Assets\ Prueba/img/bx-menu.svg");
+  background-image: url('./Assets\ Prueba/img/bx-menu.svg');
   font-size: 1.8rem;
 }
 
@@ -120,7 +121,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .container__form form {
@@ -435,15 +436,16 @@ form button {
   place-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  background-image: url("./Assets\ Prueba/img/bg_1.jpg");
+  background-image: url('./Assets\ Prueba/img/bg_1.jpg');
   background-position: center;
   background-size: cover;
   margin: 3rem !important;
+  padding: 5rem 0;
 }
 
 .container__testimonials::after,
 .container__testimonials::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -463,6 +465,7 @@ form button {
 }
 
 .testimonials__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,7 +491,6 @@ form button {
   position: relative;
   padding: 5rem 0;
   height: 500px;
-  width: 400px;
 }
 
 .swiper {
@@ -496,31 +498,16 @@ form button {
   height: 100%;
 }
 
-.swiper-slide {
+.swiper-wrapper > .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: rgba(255, 255, 255, 0);
-  position: relative;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   flex-direction: column;
-  padding: 5rem 0;
 }
 
 .slide__title {
-  position: absolute;
-  bottom: 32px;
   padding: 0.5rem 3rem;
   border-radius: 10px;
   background: white;
@@ -534,11 +521,13 @@ form button {
 }
 
 .swiper-slide img {
-  display: block;
-  width: 50%;
+  width: 58%;
   height: 100%;
-  object-fit: fill;
-  margin: 1.5rem 0;
+  margin: 0 0 -20px 0;
+}
+
+.swiper-pagination {
+  display: none;
 }
 
 .swiper-pagination-bullet-active {
@@ -660,6 +649,12 @@ form button {
   margin-bottom: -10px !important;
 }
 
+@media screen and (width <= 900px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .gallery__titles {
     padding: 0;
@@ -679,6 +674,7 @@ form button {
 
   .hero,
   .container__social {
+    margin: 20px 0;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
   }
